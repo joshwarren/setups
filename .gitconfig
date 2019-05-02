@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = JoshuaW
+	email = Joshua.Warren@eqdata.co.uk
+[core]
+	excludesfile = R:/Staff/JoshW/.gitignore_global
+[alias]
+	la      = "!git config -l | grep alias | cut -c 7-"
+	lg 		= log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --abbrev-commit
+	diffAll	= diff HEAD
+	dlc     = diff --cached HEAD^
+	changes = diff --stat -r
+	amend   = commit --amend
+
